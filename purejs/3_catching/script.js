@@ -59,9 +59,14 @@ listenOnStartButton()
 	})
 	.then(function (value) {
 		alert(value);
+		return value; //
 	})
 	.catch(function (cause) {
 		alert(cause);
+		return "fixed value";
+	})
+	.then(function (value) {
+		console.log(value);
 	})
 	.finally(function () {
 		//finnaly wil be invoked always

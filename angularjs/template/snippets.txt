@@ -1,0 +1,11 @@
+	$scope.rates = [];
+	$scope.promise = $http({
+		method: 'GET',
+		url: 'https://api.ratesapi.io/api/latest'
+	}).then(function successCallback(response) {
+		const rates = response.data.rates;
+		$scope.rates = Object.keys(rates).map(key => ({
+			currency: key,
+			value: rates[key]
+		}));
+	});

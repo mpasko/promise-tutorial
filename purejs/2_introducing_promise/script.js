@@ -39,7 +39,7 @@ function listenOnContinueButton() {
 
 listenOnStartButton()
 	.then(function () {
-		/*return*/ waitASec(); //Common error is to forget the return keyword!
+		/* */return/* */ waitASec(); //Common error is to forget the return keyword!
 	})
 	.then(function () {
 		showContinue();
