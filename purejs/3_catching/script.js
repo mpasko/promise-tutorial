@@ -16,6 +16,8 @@ function listenOnStartButton() {
 		$('#start-button').click(function () {
 			/*  *x/
 			throw "error cause";
+			/*  *x/
+			reject("error cause");
 			/*  */
 			resolve();
 		});

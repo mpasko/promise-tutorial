@@ -1,14 +1,16 @@
 TODO:
 
 -basics: promise syntax, deferred syntax
+-basics: isolated example of try/catch
 
 -Deferred is deprecated in javascript
 in angularjs: you cant call notify before you return promise object
 https://stackoverflow.com/questions/21402063/angularjs-promises-notify-not-working
 
--unwrapping promises in angularjs deprecated
+-unwrapping promises in angularjs templates deprecated
 
 -rxjs example: dwa strumienie: synchroniczne i asynchroniczne: zzipowanie ich ze sobą
+-rxjs wycieki pamięci
 
 -notify:
 https://jsfiddle.net/jsengel/8fzmqy4y/
@@ -16,3 +18,10 @@ misconception: to nie robi notify-a po każdym thenie tak jak mi się wydawało
 
 -thenable nie jest catchable
 -thenable nie powinno zwracać samego siebie
+
+
+-osobne przykłady na reject w promisie / wystarczy rozbić catching na prostsze przykłady!
+-składnia then(resolve, reject) i co jest lepsze
+
+-async/await: accept thenables
+-throw error in async/catch error from await

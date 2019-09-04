@@ -7,7 +7,7 @@ function buildThenable(operation) {
 	const thenable = {
 		then: function (newCallback) {
 			callback = newCallback;
-			return thenable;
+			//return thenable;
 		}
 	};
 	operation(value => callback(value));
@@ -24,7 +24,7 @@ function clickAction() {
 	});
 }
 
-new Promise(clickAction())
+Promise.resolve(clickAction())
 	.then(function (value) {
 		alert(value);
 	});
