@@ -1,0 +1,19 @@
+{
+  "name": "promise_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "pako",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.7.8",
+    "angular-mocks": "^1.7.8",
+    "jasmine": "^3.4.0",
+    "karma": "^4.3.0",
+    "karma-firefox-launcher": "^1.2.0",
+    "karma-jasmine": "^2.0.1"
+  }
+}
