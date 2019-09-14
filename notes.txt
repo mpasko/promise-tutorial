@@ -3,6 +3,13 @@ TODO:
 -basics: promise syntax, deferred syntax
 -basics: isolated example of try/catch
 
+-allSettled
+
+-różnice w obsłudze wyjątków w $q
+
+purejs-throw-catch:
+-zauważyłem że to inaczej się zachowuje dla errorów a inaczej dla stringów (podczas rzucania)
+
 -Deferred is deprecated in javascript
 in angularjs: you cant call notify before you return promise object
 https://stackoverflow.com/questions/21402063/angularjs-promises-notify-not-working

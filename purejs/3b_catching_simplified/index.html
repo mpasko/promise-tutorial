@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./style.css"></link>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+		<script type="text/javascript" src="./script.js" defer></script>
+	</head>
+	<body>
+		<select id="source-option">
+			<option value="throw-string">
+				throwing string
+			</option>
+			<option value="throw-error">
+				throwing error
+			</option>
+			<option value="reject">
+				rejecting
+			</option>
+			<option value="resolve">
+				resolving
+			</option>
+		</select>
+		</br>
+		<button id="try-catch-button">
+			try block
+		</button>
+		<button id="catch-button">
+			promise catch
+		</button>
+		<button id="finally-button">
+			promise finally
+		</button>
+		<button id="catch-finally-button">
+			promise catch finally
+		</button>
+	</body>
+</html>
