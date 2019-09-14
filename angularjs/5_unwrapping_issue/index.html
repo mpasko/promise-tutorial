@@ -10,11 +10,10 @@
 
   <body ng-app="promises.tutorial" ng-cloak>
     <div ng-controller="PhantomController">
-		{{raceMiddleFail}}
-		<hr>
-		<div ng-repeat="item in allSuccess">
-			{{item}}
-		</div>
+		{{name.value}}
+		<br />
+		<input type="checkbox" ng-model="checkboxModel" ng-change="recalculateName()">
+		<button ng-click="otherReuse()"> Fire other reuse! </button>
     </div>
   </body>
 </html>
