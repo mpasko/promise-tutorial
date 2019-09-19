@@ -2,19 +2,15 @@
 
 const DEFAULT_TIMEOUT = 2000;
 
-const promise = new Promise(function (resolve, reject) {
-	try {
+const promise = new Promise(function (resolve) {
 	$('#start-button').click(function () {
 		window.setTimeout(function () {
-			resolve();
+			resolve('It works!');
 		}, DEFAULT_TIMEOUT);
 	});
-	} catch (error) {
-		reject(error);
-	}
 });
 
 rxjs.from(promise)
-	.subscribe(function () {
-		console.log('It works!');
+	.subscribe(function (value) {
+		console.log(value);
 	});

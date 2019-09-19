@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+    <h3>Promises in pure JS</h3>
+    <ul>
+      <li>History: Active Object, Future, 
+        <a href="https://en.wikipedia.org/wiki/Futures_and_promises" target="_blank">Reference</a></li>
+      <li>Promise states: created and settled.<br />
+        (resolved/rejected are substates of settled)</li>
+      <li><a href="./1a_no_promises/index.html">Before promises</a><br />
+        Important keyword: <i>The Pyramid of Doom</i></li>
+      <li><a href="./1b_thenable/index.html">Thenable</a><br />
+        Ridle for best students: What is wrong with this code? In which situation will it not work correctly?</li>
+      <li><a href="./2_introducing_promise_simple/index.html">Introducing promise</a><br />
+        <a href="./2_introducing_promise_simple/simple_syntax.js">Promise syntax</a>
+      </li>
+      <li><a href="./2b_wrapping_thenable/index.html">Wrapping thenable</a><br />
+        Note: thenable is not <i>'catchable'</i><br />
+        Note2: Mozilla documentation says that thenable shouldn't return itself in order to prevent from infinite loop 
+        but in reality it is more <i>unaware-programmer-proof</i>.</li>
+      <li><a href="./2_introducing_promise_rewritten_1a/index.html">Chain of promises</a> <br />
+        Notice: Please note, that the proper way to return a value from a promise constructor, is to put as a <i>resove</i> method parameter.<br />
+        <a href="./4_nesting/snippet.js">Promise nesting</a></li>
+      <li><a href="./3a_throwing/index.html">Throwing</a></li>
+      <li><a href="./3b_catching_simplified/index.html">Catching</a><br />
+        <a href="./3c_catching_complex/catching_other_syntax.js">Catching -other syntax</a><br />
+        <a href="./3c_catching_complex/index.html">Catching -other example</a></li>
+    </ul>
+    <hr />
+    <b>Bibliography:</b><br />
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise API</a>
+	</body>
+</html>

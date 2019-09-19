@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+    <h3>Promises in AngularJS</h3>
+    <ul>
+      <li><a href="./1_digest_cycle/index.html">Integration with digest cycle</a></li>
+      <li><a href="./4_testing/test/example.spec.js">Testing</a><br />
+        In short: necessity to call <i>$rootScope.$digest()</i>, same as in a situation when an event comes from outside of angular.</li>
+      <li><a href="./6_deferred/index.html">Deferred</a><br />
+        In other words: builder for promises.<br/>
+        Note: Deprecated in pure JS. obsolete API: <i>Promise.defer()</i> Polyfil and documentation can be found 
+       <a href="https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Deferred" target="_blank">here</a></li>
+      <li><a href="./3_catching/index.html">Throw, catch</a></li>
+      <li><a href="./5_unwrapping_issue/index.html">Unwrapping promises: legacy issue</a><br />
+        First versions of AngularJS (<1.2.x) unwrapped promises into values in html templates.</li>
+      <li><a href="https://jsfiddle.net/jsengel/8fzmqy4y/" target="_blank">Notify (external example)</a><br />
+        Misconception: it does not call itself after each then, it can be called only by deferred or in constructor</li>
+      <li><a href="./2_all_race/index.html" target="_blank">All, race</a><br />
+      Other useful method: <i>allSettled</i> -waits until all promises will be settled (either resolved or rejected) and puts result or error codes in array.<br />
+      Notice: It will also work in the same way in Pure JS (Author's whim to implement it in AngularJS :P -good usage of <i>$timeout</i>)</li>
+    </ul>
+    <hr />
+    <b>Bibliography:</b><br />
+    <a href="https://docs.angularjs.org/api/ng/service/$q" target="_blank">$q API</a>
+	</body>
+</html>

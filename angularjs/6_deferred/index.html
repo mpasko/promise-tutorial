@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html>
+  <head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-app="promises.tutorial" ng-cloak>
+    <div ng-controller="PhantomController">
+      <button ng-click="start()"  ng-hide="currentDeferred">Start</button>
+      <button ng-click="resolve()" ng-show="currentDeferred">Resolve</button>
+      <button ng-click="reject()"  ng-show="currentDeferred">Reject</button><br />
+      {{ value }}
+    </div>
+  </body>
+</html>

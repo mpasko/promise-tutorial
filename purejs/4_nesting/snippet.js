@@ -1,9 +1,3 @@
-/*
-return new Promise(function(resolve) {
-			resolve([]);
-		})
-*/
-
 Promise.resolve([])
 	.then(function (array) {
 		array.push('a');
