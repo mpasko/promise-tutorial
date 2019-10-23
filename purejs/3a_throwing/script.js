@@ -29,7 +29,7 @@ $('#start-throwing').click(function () {
 	trowingInside()
 		.then(waitASec)
 		.catch(function (cause) {
-			alert(cause);
+			console.warn(cause);
 		});
 });
 
@@ -37,7 +37,7 @@ $('#start-rejecting').click(function () {
 	rejectingInside()
 		.then(waitASec)
 		.catch(function (cause) {
-			alert(cause);
+			console.warn(cause);
 		});
 });
 
@@ -45,7 +45,7 @@ $('#start-rejected-promise').click(function () {
 	rejectedPromise()
 		.then(waitASec)
 		.catch(function (cause) {
-			alert(cause);
+			console.warn(cause);
 		});
 });
 
@@ -56,6 +56,6 @@ $('#start-chaining').click(function () {
 			throw `${cause} but slightly different`;
 		})
 		.catch(function (cause) {
-			alert(cause);
+			console.warn(cause);
 		});
 });

@@ -1,0 +1,48 @@
+.console-container {
+/* position: relative; */
+}
+
+.console {
+  background-color: black;
+  color: white;
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 99%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  bottom: 20px;
+  font-family: monospace;
+}
+
+.clear-btn {
+  right: 0;
+  position: absolute;
+}
+
+.date-log {
+  color: darkkhaki;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.normal-log {
+  color: white;
+}
+
+.info-log {
+  color: lightblue;
+}
+
+.warn-log {
+  color: orange;
+}
+
+.error-log {
+  color: tomato;
+  font-weight: bold;
+}
+
+.debug-log {
+  color: yellow;
+}

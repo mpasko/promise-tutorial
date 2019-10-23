@@ -60,11 +60,11 @@ listenOnStartButton()
 			.then(() => value);
 	})
 	.then(function (value) {
-		alert(value);
+		console.warn(value);
 		return value; //
 	})
 	.catch(function (cause) {
-		alert(cause);
+		console.warn(cause);
 		return "fixed value";
 	})
 	.then(function (value) {
