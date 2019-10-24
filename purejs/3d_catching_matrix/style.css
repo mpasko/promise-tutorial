@@ -5,3 +5,8 @@
 .passed {
 	color: green;
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}

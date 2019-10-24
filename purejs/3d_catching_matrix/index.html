@@ -4,19 +4,40 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./style.css"></link>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+		<script type="text/javascript" src="../../utils/lib/jquery.js"></script>
 		<script type="text/javascript" src="./script.js" defer></script>
 	</head>
 	<body>
+    Experiment steps:
+    <ol>
+      <li>We are generating a promise that is already <b>fulfilled</b> or <b>rejected.</b></li>
+      <li>(Optionally) we are inserting something in between: <b>then</b>, <b>catch</b> or <b>finally.</b></li>
+      <li>Finally, we are invoking <b>then</b>, <b>catch</b> or <b>finally</b> and marking <span class="passed">V</span> if callback was invoked.</li>
+    </ol>
+    Important things to note:
+    <ul>
+      <li>'Catch' ignores fulfilled promise, 'then' ignores rejected promise</li>
+      <li>'Then' does not change promise state</li>
+      <li>'Catch' returns fulfilled promise</li>
+      <li>'Finally' will be invoked always!</li>
+      <li>'Finally' does not change promise state</li>
+    </ul>
 		<table>
       <tr>
-        <th>\</th>
+        <th></th>
         <th>Then</th>
         <th>Catch</th>
         <th>Finally</th>
       </tr>
       <tr id="fulfilled"><td>After fulfilled promise</td></tr>
+      <tr id="fulfilled-after-then"><td>After fulfilled promise and then</td></tr>
+      <tr id="fulfilled-after-catch"><td>After fulfilled promise and catch</td></tr>
+      <tr id="fulfilled-after-finally"><td>After fulfilled promise and finally</td></tr>
+      <tr><td><hr /></td></tr>
       <tr id="rejected"><td>After rejected promise</td></tr>
+      <tr id="rejected-after-then"><td>After rejected promise and then</td></tr>
+      <tr id="rejected-after-catch"><td>After rejected promise and catch</td></tr>
+      <tr id="rejected-after-finally"><td>After rejected promise and finally</td></tr>
     </table>
 	</body>
 </html>
