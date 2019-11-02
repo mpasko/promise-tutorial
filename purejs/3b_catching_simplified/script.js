@@ -27,6 +27,7 @@ function waitASec(parameter) {
 	console.log('Waiting...');
 	return new Promise(function(resolve) {
 		window.setTimeout(function () {
+      console.log('Waiting complete!');
 			resolve(parameter);
 		}, DEFAULT_TIMEOUT);
 	});
@@ -71,22 +72,6 @@ $('#catch-button').click(function () {
 
 $('#finally-button').click(function () {
 	selectSource()
-		.then(waitASec)
-		.finally(function (cause) {
-			console.log(`inside finally: ${cause}`);
-			return 'overwritten result in finally';
-		})
-		.then(function (result) {
-			console.log(`after finally: ${result}`);
-		});
-});
-
-$('#catch-finally-button').click(function () {
-	selectSource()
-		.catch(function (cause) {
-			console.log('before finally');
-			return 'overwritten result in catch';
-		})
 		.then(waitASec)
 		.finally(function (cause) {
 			console.log(`inside finally: ${cause}`);

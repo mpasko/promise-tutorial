@@ -20,6 +20,7 @@ function waitASec() {
 	console.log('Waiting...');
 	return new Promise(function(resolve) {
 		window.setTimeout(function () {
+      console.log('Waiting complete!');
 			resolve();
 		}, DEFAULT_TIMEOUT);
 	});

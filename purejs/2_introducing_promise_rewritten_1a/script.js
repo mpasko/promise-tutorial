@@ -16,8 +16,10 @@ function listenOnStartButton() {
 
 function waitASec() {
 	return new Promise(function(resolve) {
-		//Notice: no async here!
+    //Notice: no async here!
+    console.log('Waiting a second...');
 		window.setTimeout(function () {
+      console.log('Waiting complete!');
 			resolve();
 		}, DEFAULT_TIMEOUT);
 	});

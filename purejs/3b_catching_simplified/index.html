@@ -8,6 +8,14 @@
 		<script type="text/javascript" src="./script.js" defer></script>
 	</head>
 	<body>
+      Important things to note:
+      <ul>
+        <li>There is no promise behavior difference between:
+          <ul>Throwing inside promise constructor</ul>
+          <ul>Rejecting a promise</ul>
+        </li>
+        <li>Finally does not accept result of previous then nor catch! (Common misconception)</li>
+      </ul>
 		<select id="source-option">
 			<option value="throw-string">
 				throwing string
@@ -31,9 +39,6 @@
 		</button>
 		<button id="finally-button">
 			promise finally
-		</button>
-		<button id="catch-finally-button">
-			promise catch finally
 		</button>
 	</body>
 </html>

@@ -90,21 +90,5 @@ angular.module('promises.tutorial').controller('PhantomController',
 					console.log(`after finally: ${result}`);
 				});
 		};
-		
-		$scope.catchFinally = function () {
-			phantomService.selectSource($scope.source)
-				.catch(function (cause) {
-					console.log('before finally');
-					return 'overwritten result in catch';
-				})
-				.then(phantomService.waitASec)
-				.finally(function (cause) {
-					console.log(`inside finally: ${cause}`);
-					return 'overwritten result in finally';
-				})
-				.then(function (result) {
-					console.log(`after finally: ${result}`);
-				});
-		};
 	}
 );
